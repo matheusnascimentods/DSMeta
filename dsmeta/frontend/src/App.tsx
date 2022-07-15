@@ -1,4 +1,4 @@
-import LineTable from "./Components/TableLine"
+import SalesCard from "./Components/SalesCard"
 
 function App() {
  
@@ -6,12 +6,17 @@ function App() {
     
       <>
 
-        <h1>O NENE VOLTOU PRO VASCO</h1>  
-      
-        <p>O NENE VOLTOU PRO VASCO JOGA MUITA BOLA AINDA</p>
-        <p>VEIO MOSTRAR A COLINA ESSA É A TROPA DO VOVÔ</p>
+        <main>
+          <section id="sales">
 
-        <LineTable />
+            <div className="dsmeta-container">
+
+              <SalesCard />
+
+            </div>
+
+          </section>
+        </main>
 
       </>
 
