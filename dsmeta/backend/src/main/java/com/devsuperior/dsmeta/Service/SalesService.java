@@ -9,7 +9,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import com.devsuperior.dsmeta.DTO.SalesDTO;
 import com.devsuperior.dsmeta.Model.Sales;
 import com.devsuperior.dsmeta.Repository.SalesRepository;
 
@@ -36,11 +35,4 @@ public class SalesService {
 		
 	}
 	
-	public void AddSale(SalesDTO SaleDTO) {
-		
-		Sales Sale = SaleDTO.toEntity();
-		repository.save(Sale);
-				
-	}
-
 }
