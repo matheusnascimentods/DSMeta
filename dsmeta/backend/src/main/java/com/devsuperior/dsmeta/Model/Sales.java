@@ -23,6 +23,20 @@ public class Sales {
 	
 	
 	public Sales() {}
+	
+	
+
+	public Sales(String sellerName, Integer visited, Integer deals, Double amount, LocalDate date) {
+	
+		this.sellerName = sellerName;
+		this.visited = visited;
+		this.deals = deals;
+		this.amount = amount;
+		this.date = date;
+	
+	}
+
+
 
 	public long getId() {
 	
