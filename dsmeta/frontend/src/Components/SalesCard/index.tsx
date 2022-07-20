@@ -11,17 +11,23 @@ import { Sale } from '../../models/Sale';
 
 function SalesCard() {
 
-    const [minDate, setMinDate] = useState(new Date());
-    const [maxDate , setMaxDate]= useState(new Date());
+    const min = new Date(new Date().setDate(new Date().getDate() - 365));
+    const max = new Date();
+
+    const [minDate, setMinDate] = useState(min);
+    const [maxDate , setMaxDate]= useState(max);
 
     const [sales, setSales] = useState<Sale[]>([]);
   
     useEffect(() => {
 
-        axios.get(`${BASE_URL}/Sales`)
+        let min = minDate.toISOString().slice(0, 10);
+        let max = maxDate.toISOString().slice(0, 10);
+
+        axios.get(`${BASE_URL}/Sales?minDate=${min}&maxDate=${max}`)
             .then(response => { setSales(response.data.content); })
  
-    }, []);
+    }, [minDate, maxDate]);
  
 
     return (  
@@ -95,7 +101,7 @@ function SalesCard() {
                                         <td className="show992">{sale.deals}</td>
                                         <td>{sale.amount.toFixed(2)}</td>
                                         <td>
-                                            <NotificationButton />
+                                            <NotificationButton saleID={sale.id} />
                                         </td>
     
                                     </tr>
