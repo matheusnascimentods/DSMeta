@@ -64,6 +64,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>DSMetaAPI</finalName>
 		<plugins>
 
 			<plugin>

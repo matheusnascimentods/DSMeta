@@ -29,10 +29,4 @@ public class SalesService {
 		
 	}
 	
-	public Page<Sales> GetSeller(String SellerName, Pageable pageable) {
-		
-		return repository.findBySellerName(SellerName, pageable);
-		
-	}
-	
 }
