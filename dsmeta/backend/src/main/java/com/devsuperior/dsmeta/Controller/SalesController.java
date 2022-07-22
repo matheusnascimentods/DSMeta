@@ -30,13 +30,6 @@ public class SalesController {
 		
 	}
 	
-	@GetMapping("/Seller")
-	public Page<Sales> FindeallerByName(@RequestParam(value="sellerName") String sellerName, Pageable pageable) {
-		
-		return service.GetSeller(sellerName, pageable);
-		
-	}
-	
 	@GetMapping("/{id}/Notification")
 	public String SendSMS(@PathVariable Long id) {
 

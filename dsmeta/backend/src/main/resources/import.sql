@@ -33,7 +33,7 @@ INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Qui-Gon Jin
 INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Bucky Barnes',64,33,8193.0,'2022-03-13');
 INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Shang Chi',39,39,10557.0,'2022-03-05');
 INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Natasha Romanoff',158,84,21601.0,'2022-03-02');
-INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Kate Bishopme',82,82,22465.0,'2022-02-27');
+INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Kate Bishop',82,82,22465.0,'2022-02-27');
 INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Jonatham Kent',68,56,12595.0,'2022-02-17');
 INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Dick Grayson',27,13,4636.0,'2022-02-16');
 INSERT INTO tb_sales(seller_name,visited,deals,amount,date) VALUES ('Jason Todd',52,33,10155.0,'2022-02-14');
