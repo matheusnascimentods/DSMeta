@@ -1,5 +1,6 @@
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './Components/Footer';
 
 import SalesCard from "./Components/SalesCard"
 
@@ -22,6 +23,8 @@ function App() {
 
           </section>
         </main>
+
+        <Footer />
 
       </>
 
