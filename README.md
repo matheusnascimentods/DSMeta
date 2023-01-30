@@ -1,5 +1,5 @@
 
-# DS-Meta
+# DSMeta
 
 Sistema de gerenciamento de vendas, desenvolvido com o treinamento Dev Superior 
 
